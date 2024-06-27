@@ -87,6 +87,7 @@ def main(session_dir):
                     print(f"Skipping {mp4_path.name}, already moved.")
                     continue
 
+                # HEREEEEE
                 start_date = mp4_get_start_datetime(str(mp4_path))
                 meta = list(et.get_metadata(str(mp4_path)))[0]
                 cam_serial = meta['QuickTime:CameraSerialNumber']
